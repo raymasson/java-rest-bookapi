@@ -1,0 +1,23 @@
+package com.pluralsight;
+
+import java.util.List;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+
+import com.pluralsight.models.BookModel;
+import com.pluralsight.repositories.BookRepository;
+
+@Path("books")
+public class BookController {
+	
+	private BookRepository bookRepository = new BookRepository();
+	
+    @GET
+    @Produces(MediaType.APPLICATION_XML)
+    public List<BookModel> getAll() {
+        return bookRepository.getAll();
+    }
+}

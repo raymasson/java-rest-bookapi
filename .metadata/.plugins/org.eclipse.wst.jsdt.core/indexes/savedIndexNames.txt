@@ -1,0 +1,7 @@
+INDEX VERSION 1.3+D:\Git\Repositories\java-rest-bookapi\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+637101303.index
+2585048930.index
+2009506205.index
+3770174525.index
+323894478.index
+2368258384.index

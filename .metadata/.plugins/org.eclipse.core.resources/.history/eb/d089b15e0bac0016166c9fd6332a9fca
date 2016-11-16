@@ -1,0 +1,5 @@
+package com.pluralsight.models;
+
+public class BookModel {
+
+}

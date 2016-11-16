@@ -1,0 +1,5 @@
+package com.pluralsight.repositories;
+
+public class BookRepository {
+
+}

@@ -1,0 +1,11 @@
+package com.pluralsight.repositories;
+
+import java.util.ArrayList;
+
+public class BookRepository {
+	
+	public List<BookModel> getAll(){
+		List<bookModel> books = new ArrayList<BookModel>();
+	}
+
+}
