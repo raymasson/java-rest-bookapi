@@ -1,0 +1,63 @@
+package com.pluralsight;
+
+import java.net.UnknownHostException;
+import java.util.List;
+
+import javax.ws.rs.Consumes;
+import javax.ws.rs.DELETE;
+import javax.ws.rs.GET;
+import javax.ws.rs.POST;
+import javax.ws.rs.PUT;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+
+import com.mongodb.MongoClient;
+import com.pluralsight.models.BookModel;
+import com.pluralsight.repositories.BookRepository;
+
+@Path("books")
+public class BookController {
+	
+	private BookRepository bookRepository = new BookRepository();
+	
+	public BookController () throws UnknownHostException{
+		bookRepository.init(new MongoClient("localhost", 27017), "bookAPI", "books");
+	}
+	
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    public List<BookModel> getAll() {
+        return bookRepository.getAll();
+    }
+    
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    @Path("{bookId}")
+    public BookModel get(@PathParam ("bookId") String bookId) {
+        return bookRepository.getAll().get(0);
+    }
+    
+    @POST
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    public BookModel post(BookModel bookModel) {
+    	return bookModel;
+    }
+    
+    @PUT
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    @Path("{bookId}")
+    public BookModel put(@PathParam ("bookId") String bookId, BookModel bookModel) {
+        return bookModel;
+    }
+    
+    @DELETE
+    @Produces(MediaType.TEXT_PLAIN)
+    @Path("{bookId}")
+    public String delete(@PathParam ("bookId") String bookId) {
+        return "The book is removed!";
+    }
+}

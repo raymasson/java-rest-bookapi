@@ -48,6 +48,18 @@
             <groupId>org.glassfish.jersey.media</groupId>
             <artifactId>jersey-media-moxy</artifactId>
         </dependency>
+        <dependency>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongo-java-driver</artifactId>
+			<version>2.10.1</version>
+		</dependency>
+		<!--  Gson: Java to Json conversion -->
+    	<dependency>
+      		<groupId>com.google.code.gson</groupId>
+      		<artifactId>gson</artifactId>
+      		<version>2.8.0</version>
+      		<scope>compile</scope>
+    	</dependency>
     </dependencies>
     <properties>
         <jersey.version>2.24</jersey.version>

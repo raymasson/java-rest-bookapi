@@ -5,7 +5,21 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2016-11-16T01:00:00Z</updated>
+  <updated>2016-11-16T12:22:00Z</updated>
+  <entry>
+    <title>SpringOne Platform 2016 Replay: To Spring Security 4.1 and Beyond</title>
+    <link rel="alternate" href="https://spring.io/blog/2016/11/16/springone-platform-2016-replay-to-spring-security-4-1-and-beyond" />
+    <category term="news" label="News and Events" />
+    <author>
+      <name>Pieter Humphrey</name>
+    </author>
+    <id>tag:spring.io,2016-11-16:2699</id>
+    <updated>2016-11-16T12:22:00Z</updated>
+    <content type="html">&lt;p&gt;Recorded at SpringOne Platform 2016.&lt;br/&gt;Speakers: Rob Winch, Joe Grandja&lt;br/&gt;Slides: &lt;a href="http://www.slideshare.net/SpringCentral/to-spring-security-41-and-beyond"&gt;http://www.slideshare.net/SpringCentral/to-spring-security-41-and-beyond&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Exploits are continually evolving making security hard. This is compounded by the fact that the technologies we need to secure are a moving target.&lt;/p&gt;
+&lt;p&gt;In this talk we will discuss how to easily secure an application with Spring Security 4.1. We will focus on some of the new features found in Spring Security 4.1 and discuss the future direction of Spring Security.&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/H94Wbd8ARKM" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
+  </entry>
   <entry>
     <title>Spring Tips: Spring Cloud Data Flow</title>
     <link rel="alternate" href="https://spring.io/blog/2016/11/16/spring-tips-spring-cloud-data-flow" />
@@ -583,124 +597,5 @@ Issues&lt;/a&gt; or via the comments section. You can also ping me Joe &lt;a hre
   &lt;li&gt;Spring Data Elasticsearch 2.0.5 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-elasticsearch/2.0.5.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/elasticsearch/docs/2.0.5.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/elasticsearch/docs/2.0.5.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/elasticsearch/docs/2.0.5.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Spring Data Couchbase 2.1.5 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-couchbase/2.1.5.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/couchbase/docs/2.1.5.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/couchbase/docs/2.1.5.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/couchbase/docs/2.1.5.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content>
-  </entry>
-  <entry>
-    <title>Introducing the Spring Cloud CLI Launcher</title>
-    <link rel="alternate" href="https://spring.io/blog/2016/11/02/introducing-the-spring-cloud-cli-launcher" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Spencer Gibb</name>
-    </author>
-    <id>tag:spring.io,2016-10-31:2672</id>
-    <updated>2016-11-02T22:46:20Z</updated>
-    <content type="html">&lt;p&gt;Getting started with Spring Cloud can be daunting. If you have seen the great Josh Long give his &lt;a href="https://www.youtube.com/watch?v=5q8B6lYhFvE"&gt;Cloud Native Java&lt;/a&gt; presentation, you will notice that you need to create several supporting applications before you can see your application at work.&lt;/p&gt;&lt;h2&gt;&lt;a href="#spring-cloud-cli-launcher" class="anchor" name="spring-cloud-cli-launcher"&gt;&lt;/a&gt;Spring Cloud CLI Launcher&lt;/h2&gt;
-&lt;p&gt;As part of the transition from Spring XD to &lt;a href="http://cloud.spring.io/spring-cloud-dataflow/"&gt;Spring Cloud Dataflow&lt;/a&gt;, one of the extracted projects is called the &lt;a href="https://github.com/spring-cloud/spring-cloud-deployer"&gt;Spring Cloud Deployer&lt;/a&gt;. The Deployer allows for launching applications on various platforms, including launching on a developer machine.&lt;/p&gt;
-&lt;p&gt;We wanted to simplify users&amp;rsquo; ability to experiment with Spring Cloud, so the &lt;code&gt;spring cloud&lt;/code&gt; command was born.&lt;/p&gt;
-&lt;p&gt;The &lt;code&gt;spring cloud&lt;/code&gt; command automatically runs some of the supporting servers required to run applications in a Spring Cloud environment such as Config Server and Eureka.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/spring-cloud/spring-cloud-cli/master/docs/src/main/asciidoc/images/spring-cloud-launcher-log.png" alt="spring cloud logs" /&gt;&lt;/p&gt;&lt;h3&gt;&lt;a href="#install-spring-boot-cli" class="anchor" name="install-spring-boot-cli"&gt;&lt;/a&gt;Install Spring Boot CLI&lt;/h3&gt;
-&lt;p&gt;The first step is to install the &lt;a href="http://docs.spring.io/spring-boot/docs/current/reference/html/getting-started-installing-spring-boot.html#getting-started-installing-the-cli"&gt;Spring Boot CLI&lt;/a&gt; (the &lt;code&gt;spring&lt;/code&gt; command). The required minimum version is &lt;code&gt;1.4.1.RELEASE&lt;/code&gt;. I prefer the &lt;a href="http://docs.spring.io/spring-boot/docs/current/reference/html/getting-started-installing-spring-boot.html#getting-started-sdkman-cli-installation"&gt;SDKMAN method&lt;/a&gt; myself.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint"&gt;$ sdk install springboot&#xD;
-$ spring --version&#xD;
-Spring Boot v1.4.1.RELEASE
-&lt;/code&gt;&lt;/pre&gt;&lt;h3&gt;&lt;a href="#install-spring-cloud-cli" class="anchor" name="install-spring-cloud-cli"&gt;&lt;/a&gt;Install Spring Cloud CLI&lt;/h3&gt;
-&lt;p&gt;Next you need to install the Spring Cloud Launcher CLI (the &lt;code&gt;spring cloud&lt;/code&gt; command) via the Spring Boot CLI.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint"&gt;$ spring install org.springframework.cloud:spring-cloud-cli:1.2.1.RELEASE
-&lt;/code&gt;&lt;/pre&gt;&lt;h3&gt;&lt;a href="#default-servers" class="anchor" name="default-servers"&gt;&lt;/a&gt;Default Servers&lt;/h3&gt;
-&lt;p&gt;If you run &lt;code&gt;spring cloud&lt;/code&gt; without any arguments, Config Server and Eureka are launched. Config Server starts before other services so that it will available so those other services can pull their configuration.&lt;/p&gt;&lt;h3&gt;&lt;a href="#available-servers-to-launch" class="anchor" name="available-servers-to-launch"&gt;&lt;/a&gt;Available Servers to Launch&lt;/h3&gt;
-&lt;p&gt;The following servers are available to launch:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint"&gt;$ spring cloud --list&#xD;
-configserver dataflow eureka h2 hystrixdashboard kafka zipkin
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;To run a specific set of servers, simply list them as arguments:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint"&gt;$ spring cloud configserver eureka hystrixdashboard
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The previous command runs Config Server, Eureka and the Hystrix Dashboard.&lt;/p&gt;&lt;h3&gt;&lt;a href="#usage" class="anchor" name="usage"&gt;&lt;/a&gt;Usage&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="prettyprint"&gt;$ spring help cloud&#xD;
-spring cloud - Start Spring Cloud services, like Eureka, Config Server, etc.&#xD;
-&#xD;
-Option         Description&#xD;
-------         -----------&#xD;
--d, --debug    Debug logging for the deployer&#xD;
--l, --list     List the deployables (don&amp;#39;t launch&#xD;
-                 anything)&#xD;
--v, --version  Show the version (don&amp;#39;t launch&#xD;
-&#xD;
-examples:&#xD;
-&#xD;
-    Launch Eureka:&#xD;
-        $ spring cloud eureka&#xD;
-&#xD;
-    Launch Config Server and Eureka:&#xD;
-        $ spring cloud configserver eureka&#xD;
-&#xD;
-    List deployable apps:&#xD;
-        $ spring cloud --list&#xD;
-&#xD;
-    Show version:&#xD;
-        $ spring cloud --version
-&lt;/code&gt;&lt;/pre&gt;&lt;h3&gt;&lt;a href="#configuring-processes" class="anchor" name="configuring-processes"&gt;&lt;/a&gt;Configuring Processes&lt;/h3&gt;
-&lt;p&gt;Each process can be configured using normal Spring Boot external configuration files with a special name and location. The name of the file is based off of the name of the process (again see &lt;code&gt;spring cloud --list&lt;/code&gt; for the full list). Config Server, for example could be configured in a file named &lt;code&gt;configserver.yml&lt;/code&gt; or &lt;code&gt;configserver.properties&lt;/code&gt;. The search path for the configuration files is the current directory (&lt;code&gt;.&lt;/code&gt;), &lt;code&gt;./config&lt;/code&gt; and &lt;code&gt;$HOME/.spring-cloud/&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;By default, the &lt;code&gt;configserver&lt;/code&gt; process uses the &lt;code&gt;native&lt;/code&gt; profile and configuration in its JAR. As an example, let&amp;rsquo;s configure Config Server globally to load properties from a GitHub repository. The contents of &lt;code&gt;$HOME/.spring-cloud/configserver.yml&lt;/code&gt; could be:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint"&gt;spring:&#xD;
-  profiles:&#xD;
-    active: git&#xD;
-  cloud:&#xD;
-    config:&#xD;
-      server:&#xD;
-        git:&#xD;
-          uri: https://github.com/spring-cloud-samples/config-repo
-&lt;/code&gt;&lt;/pre&gt;&lt;h3&gt;&lt;a href="#process-information" class="anchor" name="process-information"&gt;&lt;/a&gt;Process Information&lt;/h3&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Process &lt;/th&gt;
-      &lt;th align="center"&gt;Port &lt;/th&gt;
-      &lt;th align="right"&gt;URL &lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;code&gt;configserver&lt;/code&gt; &lt;/td&gt;
-      &lt;td align="center"&gt;8888 &lt;/td&gt;
-      &lt;td align="right"&gt;&lt;code&gt;/info&lt;/code&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;code&gt;eureka&lt;/code&gt; &lt;/td&gt;
-      &lt;td align="center"&gt;8761 &lt;/td&gt;
-      &lt;td align="right"&gt;N/A &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;code&gt;hystrixdashboard&lt;/code&gt; &lt;/td&gt;
-      &lt;td align="center"&gt;7979 &lt;/td&gt;
-      &lt;td align="right"&gt;&lt;code&gt;/hystrix&lt;/code&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;code&gt;dataflow&lt;/code&gt; &lt;/td&gt;
-      &lt;td align="center"&gt;9393 &lt;/td&gt;
-      &lt;td align="right"&gt;&lt;code&gt;/dashboard&lt;/code&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;code&gt;kafka&lt;/code&gt; &lt;/td&gt;
-      &lt;td align="center"&gt;9092 &lt;/td&gt;
-      &lt;td align="right"&gt;N/A &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;code&gt;zipkin&lt;/code&gt; &lt;/td&gt;
-      &lt;td align="center"&gt;9411 &lt;/td&gt;
-      &lt;td align="right"&gt;N/A &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;code&gt;h2&lt;/code&gt; &lt;/td&gt;
-      &lt;td align="center"&gt;9095 &lt;/td&gt;
-      &lt;td align="right"&gt;&lt;code&gt;/&lt;/code&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;The URL column is what gets registered with Eureka (if running). This allows you to click on the instance links in the Eureka dashboard.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/spring-cloud/spring-cloud-cli/master/docs/src/main/asciidoc/images/spring-cloud-launcher-eureka-dashboard.png" alt="Eureka Dashboard" /&gt;&lt;/p&gt;
-&lt;p&gt;If a process registers with Eureka, it will use the value in the Process column as &lt;code&gt;spring.application.name&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;The &lt;code&gt;kafka&lt;/code&gt; process also starts ZooKeeper on port 2181. Kafka is used for the Spring Cloud Bus.&lt;/p&gt;
-&lt;p&gt;The &lt;code&gt;h2&lt;/code&gt; database is available on port 9096 with the following JDBC URL: &lt;code&gt;jdbc:h2:tcp://localhost:9096/./target/test&lt;/code&gt;. The H2 URL can be customized via the &lt;code&gt;spring.datasource.url&lt;/code&gt; property.&lt;/p&gt;&lt;h3&gt;&lt;a href="#conclusion" class="anchor" name="conclusion"&gt;&lt;/a&gt;Conclusion&lt;/h3&gt;
-&lt;p&gt;Please check out the project on &lt;a href="https://github.com/spring-cloud/spring-cloud-cli/tree/master/spring-cloud-launcher"&gt;GitHub&lt;/a&gt;. The team would appreciate issues and enhancement requests from the community.&lt;/p&gt;</content>
   </entry>
 </feed>

@@ -152,3 +152,4 @@
 0:0:0:0:0:0:0:1 - - [16/Nov/2016:17:09:36 +0100] "PUT /exercise-services/api/books/458 HTTP/1.1" 200 76
 0:0:0:0:0:0:0:1 - - [16/Nov/2016:17:09:46 +0100] "PUT /exercise-services/api/books/458 HTTP/1.1" 200 74
 0:0:0:0:0:0:0:1 - - [16/Nov/2016:17:09:52 +0100] "DELETE /exercise-services/api/books/458 HTTP/1.1" 200 20
+0:0:0:0:0:0:0:1 - - [16/Nov/2016:17:24:39 +0100] "GET /exercise-services/api/books HTTP/1.1" 200 176
